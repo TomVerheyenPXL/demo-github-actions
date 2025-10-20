@@ -9,16 +9,16 @@ jobs:
     steps:
       - name: Checkout repository code
         uses: actions/checkout@v4
-      
+
       - name: Install Python 3.13
         uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      
-      - name: Toon repo-inhoud en werkdirectory
+
+      - name: Toon huidige directory en bestanden
         run: |
           pwd
-          ls -la
-      
+          ls -lha
+
       - name: Run my_script.py
         run: python my_script.py
