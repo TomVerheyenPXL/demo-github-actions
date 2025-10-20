@@ -1,0 +1,20 @@
+name: Exercise 1 - Directory & File Manipulation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  file_manipulation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Maak een nieuwe directory
+        run: mkdir myfolder
+
+      - name: Schrijf een bestand met tekst
+        run: echo "Dit is een korte testtekst." > myfolder/tekst.txt
+
+      - name: Toon de inhoud van de directory
+        run: ls -alh myfolder
+
+      - name: Toon de inhoud van het bestand
+        run: cat myfolder/tekst.txt
