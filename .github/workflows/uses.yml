@@ -16,4 +16,4 @@ jobs:
           python-version: '3.13'
       
       - name: Run my_script.py
-        run: python scripts/my_script.py
+        run: python my_script.py
