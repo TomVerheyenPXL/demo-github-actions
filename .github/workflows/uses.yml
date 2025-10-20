@@ -15,5 +15,10 @@ jobs:
         with:
           python-version: '3.13'
       
+      - name: Toon repo-inhoud en werkdirectory
+        run: |
+          pwd
+          ls -la
+      
       - name: Run my_script.py
         run: python my_script.py
